@@ -1,0 +1,102 @@
+@define-color bg rgba(36,39,58,0.60);
+@define-color bg-alt rgba(54,58,79,0.78);
+@define-color fg #cad3f5;
+@define-color muted #a5adcb;
+@define-color accent #998899;
+@define-color accent-soft rgba(153,136,153,0.18);
+@define-color border rgba(153,136,153,0.45);
+@define-color urgent #ed8796;
+@define-color warn #eed49f;
+@define-color ok #a6da95;
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 16px;
+    min-height: 0px;
+    border: none;
+    border-radius: 0px;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: fg;
+}
+
+#custom-launcher,#workspaces,#clock,#pulseaudio,#network,#cpu,#memory,#temperature,#battery,#tray,#backlight,#custom-power {
+    background-color: bg-alt;
+    color: fg;
+    margin: 6px 4px;
+    padding: 0px 14px;
+    border-radius: 12px;
+    border: 1px solid border;
+}
+
+.modules-left>widget:first-child>* {
+    margin-left: 8px;
+}
+
+.modules-right>widget:last-child>* {
+    margin-right: 8px;
+}
+
+#custom-launcher {
+    background-color: rgba(153,136,153,0.22);
+    color: accent;
+    padding: 0px 16px;
+}
+
+#workspaces {
+    padding: 4px;
+    background-color: rgba(36,39,58,0.72);
+}
+
+#workspaces button {
+    color: muted;
+    padding: 0px 10px;
+    margin: 0px 3px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#workspaces button:hover {
+    background-color: accent-soft;
+    color: fg;
+}
+
+#workspaces button.active {
+    background-color: accent;
+    color: #24273a;
+}
+
+#workspaces button.urgent {
+    background-color: urgent;
+    color: #24273a;
+}
+
+tooltip {
+    background-color: rgba(36,39,58,0.95);
+    border: 1px solid border;
+    border-radius: 12px;
+}
+
+tooltip label {
+    color: fg;
+}
+
+#clock {
+    color: accent;
+    font-weight: bold;
+}
+
+#pulseaudio.muted,#network.disconnected,#battery.warning,#temperature.critical {
+    color: warn;
+}
+
+#battery.critical,#battery.urgent {
+    color: urgent;
+}
+
+#battery.charging {
+    color: ok;
+}
+

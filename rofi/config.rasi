@@ -1,0 +1,89 @@
+configuration {
+    modi: "combi,drun,run,cmd:~/.config/rofi/commands.sh";
+    combi-modes: "drun,run,cmd";
+    show-icons: true;
+    font: "JetBrainsMono Nerd Font 16";
+    display-drun: "";
+    display-run: "   Run";
+    display-window: "   Window";
+    drun-display-format: "{name}";
+}
+
+@theme "/dev/null"
+
+* {
+    /* Catppuccin Macchiato Colors with Transparency */
+    bg: #24273A99;
+    bg-alt: #363A4F99;
+    fg: #998899ff;
+    accent: #998899ff;
+    
+    background-color: transparent;
+    text-color: @fg;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    spacing: 5;
+}
+
+window {
+    width: 600px;
+    border-radius: 12px;
+    border: 0px; 
+    padding: 3px; 
+    background-image: linear-gradient(45deg, #99889999, #24273A99);
+}
+
+mainbox {
+    background-color: @bg; 
+    border-radius: 10px; 
+    padding: 10px; 
+}
+
+inputbar {
+    background-color: @bg-alt;
+    children: [prompt, entry];
+    border-radius: 10px;
+    padding: 12px;
+}
+
+prompt {
+    background-color: inherit;
+    text-color: @accent;
+    padding: 0 10px 0 0;
+}
+
+entry {
+    background-color: inherit;
+    placeholder: "Search...";
+    placeholder-color: #5B6078;
+}
+
+listview {
+    lines: 7;
+    columns: 2;
+    scrollbar: false;
+    background-color: transparent;
+}
+
+element {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: @bg;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size: 32px;
+    padding: 0 15px 0 0;
+}

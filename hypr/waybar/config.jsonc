@@ -1,0 +1,22 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 36,
+  "margin-top": 6,
+  "margin-left": 8,
+  "margin-right": 8,
+  "spacing": 4,
+  "modules-left": ["custom/launcher", "hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray"],
+
+  "custom/launcher": {
+    "format": "",
+    "on-click": "rofi -show combi",
+    "tooltip": false
+  },
+
+  "clock": {
+    "format": "{:%H:%M}"
+  }
+}
