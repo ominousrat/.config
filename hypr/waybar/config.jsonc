@@ -6,11 +6,12 @@
   "margin-top": 6,
   "margin-left": 8,
   "margin-right": 8,
+  "margin-bottom": -6,
   "spacing": 4,
 
   "modules-left": ["custom/launcher", "hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray"],
+  "modules-right": ["pulseaudio", "tray", "cpu", "memory", "battery"],
 
   "custom/launcher": {
     "format": "⚡︎",
@@ -24,8 +25,8 @@
     "active-only": false,
     "move-to-monitor": false,
     "persistent-workspaces": {
-    "*": [1,2,3]
-  }
+      "*": [1, 2, 3]
+    }
   },
 
   "pulseaudio": {
@@ -35,16 +36,6 @@
       "default": ["", "", ""]
     },
     "on-click": "pavucontrol"
-  },
-
-  "network": {
-    "format-wifi": "  {essid}",
-    "format-ethernet": "󰈀 connected",
-    "format-disconnected": "󰖪 offline",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
-    "tooltip-format-ethernet": "{ipaddr}/{cidr}",
-    "tooltip-format-disconnected": "Disconnected",
-    "on-click": "nm-connection-editor"
   },
 
   "clock": {
@@ -66,6 +57,8 @@
   },
 
   "tray": {
-    "spacing": 8
-  }
+  "icon-size": 16,
+  "spacing": 6,
+  "show-passive-items": true
+}
 }

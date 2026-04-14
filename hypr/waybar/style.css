@@ -157,5 +157,35 @@ tooltip label {
 }
 
 #tray {
-    padding: 0 10px;
+    background: @bg-alt;
+    color: @fg;
+    margin: 6px 4px;
+    padding: 0 14px;
+    border-radius: 12px;
+    border: 1px solid @border;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+#tray > .active {
+    margin: 0 2px;
+}
+
+#tray > .passive {
+    margin: 0 2px;
+    opacity: 0.72;
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    margin: 0 2px;
+    background: rgba(237, 135, 150, 0.16);
+    border-radius: 8px;
+    -gtk-icon-effect: highlight;
+}
+
+#tray menu {
+    background: rgba(36, 39, 58, 0.95);
+    color: @fg;
+    border-radius: 12px;
+    border: 1px solid @border;
 }
