@@ -1,4 +1,6 @@
 [General]
+BrowseThroughArchives=true
+ShowFullPath=true
 Version=202
 ViewPropsTimestamp=2026,4,11,11,8,33.01
 
@@ -8,3 +10,6 @@ Places Icons Static Size=22
 
 [MainWindow]
 MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,glycin-heif,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,glycin-image-rs,jpegthumbnail,glycin-jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,gsf-office,opendocumentthumbnail,ffmpegthumbnailer-audio,glycin-svg,svgthumbnail

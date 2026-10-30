@@ -1,0 +1,32 @@
+{
+    "protocol": "openvpn-tcp",
+    "killswitch": 0,
+    "custom_dns": {
+        "enabled": true,
+        "ip_list": []
+    },
+    "ipv6": true,
+    "anonymous_crash_reports": false,
+    "features": {
+        "netshield": 0,
+        "moderate_nat": false,
+        "vpn_accelerator": true,
+        "port_forwarding": true,
+        "split_tunneling": {
+            "enabled": false,
+            "mode": "exclude",
+            "config_by_mode": {
+                "exclude": {
+                    "mode": "exclude",
+                    "app_paths": [],
+                    "ip_ranges": []
+                },
+                "include": {
+                    "mode": "include",
+                    "app_paths": [],
+                    "ip_ranges": []
+                }
+            }
+        }
+    }
+}

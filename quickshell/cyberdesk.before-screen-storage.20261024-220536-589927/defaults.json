@@ -1,0 +1,18 @@
+{
+  "ollama_url": "http://127.0.0.1:11434",
+  "model": "",
+  "monitor": "",
+  "accent": "#75d8f4",
+  "secondary": "#20dfc5",
+  "background": "#03131f",
+  "text": "#b4e6f7",
+  "opacity": 0.74,
+  "auto_palette": false,
+  "wallpaper": "",
+  "panel_ratio": 0.265,
+  "font_scale": 1.0,
+  "gpu_device": "",
+  "layer": "bottom",
+  "top_margin": 16,
+  "bottom_margin": 16
+}

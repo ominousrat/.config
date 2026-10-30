@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "output": "DP-1",
+  "output": "DP-2",
   "height": 36,
   "margin-top": 6,
   "margin-left": 8,
@@ -16,7 +16,7 @@
   "custom/launcher": {
     "format": "⚡︎",
     "on-click": "rofi -show combi",
-    "tooltip": false
+    "tooltip": false,
   },
 
   "hyprland/workspaces": {
@@ -25,40 +25,40 @@
     "active-only": false,
     "move-to-monitor": false,
     "persistent-workspaces": {
-      "*": [1, 2, 3]
-    }
+      "*": [1, 2, 3],
+    },
   },
 
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-muted": "󰖁 muted",
     "format-icons": {
-      "default": ["", "", ""]
+      "default": ["", "", ""],
     },
-    "on-click": "pavucontrol"
+    "on-click": "pavucontrol",
   },
 
   "clock": {
-    "format": "  {:%H:%M}  "
+    "format": "  {:%H:%M}  ",
   },
 
   "cpu": {
-    "format": " {usage}%"
+    "format": " {usage}%",
   },
 
   "memory": {
-    "format": "⛃ {}%"
+    "format": "⛃ {}%",
   },
 
   "battery": {
     "format": "{icon} {capacity}%",
     "format-charging": "󰂄 {capacity}%",
-    "format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰁹"]
+    "format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰁹"],
   },
 
   "tray": {
-  "icon-size": 16,
-  "spacing": 6,
-  "show-passive-items": true
-}
+    "icon-size": 16,
+    "spacing": 6,
+    "show-passive-items": true,
+  },
 }

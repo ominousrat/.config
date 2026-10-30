@@ -12,16 +12,16 @@
 @define-color ok #a6da95;
 
 * {
-    font-family: "JetBrainsMono Nerd Font";
-    font-size: 16px;
-    min-height: 0;
-    border: none;
-    border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 16px;
+  min-height: 0;
+  border: none;
+  border-radius: 0;
 }
 
 window#waybar {
-    background: transparent;
-    color: @fg;
+  background: transparent;
+  color: @fg;
 }
 
 /* Shared module look */
@@ -37,82 +37,82 @@ window#waybar {
 #backlight,
 #custom-launcher,
 #custom-power {
-    background: @bg-alt;
-    color: @fg;
-    margin: 6px 4px;
-    padding: 0 14px;
-    border-radius: 12px;
-    border: 1px solid @border;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+  background: @bg-alt;
+  color: @fg;
+  margin: 6px 4px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid @border;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 /* Optional outer spacing on bar edges */
 .modules-left > widget:first-child > * {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 .modules-right > widget:last-child > * {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 /* Launcher */
 #custom-launcher {
-    background: linear-gradient(45deg, rgba(153,136,153,0.30), rgba(36,39,58,0.65));
-    color: @accent;
-    font-size: 18px;
-    padding: 0 16px;
+  background: @bg;
+  color: @fg;
+  font-size: 18px;
+  padding: 0 16px;
 }
 
 /* Workspaces */
 #workspaces {
-    padding: 4px 6px;
-    background: rgba(36, 39, 58, 0.78);
+  padding: 4px 6px;
+  background: rgba(36, 39, 58, 0.78);
 }
 
 #workspaces button {
-    color: @muted;
-    min-width: 30px;
-    padding: 0 8px;
-    margin: 0 2px;
-    border-radius: 10px;
-    background: transparent;
-    transition: all 0.18s ease;
+  color: @muted;
+  min-width: 30px;
+  padding: 0 8px;
+  margin: 0 2px;
+  border-radius: 10px;
+  background: transparent;
+  transition: all 0.18s ease;
 }
 
 #workspaces button:hover {
-    background: @accent-soft;
-    color: @fg;
+  background: @accent-soft;
+  color: @fg;
 }
 
 #workspaces button.active {
-    background: @accent;
-    color: #24273a;
+  background: @accent;
+  color: #24273a;
 }
 
 #workspaces button.visible {
-    background: rgba(153, 136, 153, 0.10);
-    color: @fg;
+  background: rgba(153, 136, 153, 0.1);
+  color: @fg;
 }
 
 #workspaces button.urgent {
-    background: @urgent;
-    color: #24273a;
+  background: @urgent;
+  color: #24273a;
 }
 
 #workspaces button.empty {
-    color: rgba(202, 211, 245, 0.45);
+  color: rgba(202, 211, 245, 0.45);
 }
 
 /* Tooltip */
 tooltip {
-    background: rgba(36, 39, 58, 0.95);
-    border-radius: 12px;
-    border: 1px solid @border;
+  background: rgba(36, 39, 58, 0.95);
+  border-radius: 12px;
+  border: 1px solid @border;
 }
 
 tooltip label {
-    color: @fg;
-    padding: 2px 4px;
+  color: @fg;
+  padding: 2px 4px;
 }
 
 /* States */
@@ -120,72 +120,72 @@ tooltip label {
 #network.disconnected,
 #battery.warning,
 #temperature.critical {
-    color: @warn;
+  color: @warn;
 }
 
 #battery.critical,
 #battery.urgent {
-    color: @urgent;
+  color: @urgent;
 }
 
 #battery.charging {
-    color: @ok;
+  color: @ok;
 }
 
 /* Slightly stronger highlights */
 #clock {
-    color: @accent;
-    font-weight: 700;
+  color: @fg;
+  font-weight: 900;
 }
 
 #pulseaudio {
-    color: #91d7e3;
+  color: #91d7e3;
 }
 
 #network {
-    color: #8aadf4;
+  color: #8aadf4;
 }
 
 #cpu,
 #memory,
 #temperature {
-    color: #f5bde6;
+  color: #f5bde6;
 }
 
 #battery {
-    color: #a6da95;
+  color: #a6da95;
 }
 
 #tray {
-    background: @bg-alt;
-    color: @fg;
-    margin: 6px 4px;
-    padding: 0 14px;
-    border-radius: 12px;
-    border: 1px solid @border;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+  background: @bg-alt;
+  color: @fg;
+  margin: 6px 4px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid @border;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 #tray > .active {
-    margin: 0 2px;
+  margin: 0 2px;
 }
 
 #tray > .passive {
-    margin: 0 2px;
-    opacity: 0.72;
-    -gtk-icon-effect: dim;
+  margin: 0 2px;
+  opacity: 0.72;
+  -gtk-icon-effect: dim;
 }
 
 #tray > .needs-attention {
-    margin: 0 2px;
-    background: rgba(237, 135, 150, 0.16);
-    border-radius: 8px;
-    -gtk-icon-effect: highlight;
+  margin: 0 2px;
+  background: rgba(237, 135, 150, 0.16);
+  border-radius: 8px;
+  -gtk-icon-effect: highlight;
 }
 
 #tray menu {
-    background: rgba(36, 39, 58, 0.95);
-    color: @fg;
-    border-radius: 12px;
-    border: 1px solid @border;
+  background: rgba(36, 39, 58, 0.95);
+  color: @fg;
+  border-radius: 12px;
+  border: 1px solid @border;
 }

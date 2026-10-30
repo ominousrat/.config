@@ -1,0 +1,15 @@
+{
+  "ollama_url": "http://127.0.0.1:11434",
+  "model": "",
+  "monitor": "",
+  "accent": "#26cbe8",
+  "background": "#041820",
+  "text": "#b6e7f5",
+  "opacity": 0.7,
+  "auto_palette": false,
+  "wallpaper": "",
+  "panel_width": 360,
+  "top_margin": 54,
+  "bottom_margin": 20,
+  "system_prompt": "You are a helpful assistant. You cannot inspect or control this computer. Do not claim to have accessed system information unless it was provided by the user."
+}
